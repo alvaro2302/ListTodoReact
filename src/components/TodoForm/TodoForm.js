@@ -1,13 +1,9 @@
 import React from "react";
-import { TodoContext } from "../TodoContext";
 import './TodoForm.css';
-function TodoForm()
+function TodoForm({ addTask,setOpenModal})
 {
     const [textTask,setTexTask] = React.useState('');
-    const {
-        addTask,
-        setOpenModal
-    } = React.useContext(TodoContext)
+    
 
     const WriteText = (event)=>{
         const valueChanged = event.target.value;

@@ -3,8 +3,41 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App/index';
 
+
+// function App(props)
+// {
+//   return(
+//     <h1>!{props.saludo}, !{props.nombre}</h1>
+//   )
+// }
+
+// function withWhatever(WhaperComponent){
+//   return function OtherComponent(saludo)
+//   {
+//     return function ComponenteDeVerdad(props){
+//       return (
+//         <React.Fragment>
+//           <WhaperComponent {...props} saludo={saludo} />
+//           <p>Esto es la segunda parte de withsWhastever</p>
+//         </React.Fragment>
+  
+        
+//       )
+//     }
+//   }
+  
+// }
+//const ComponentHi = withWhatever(App)('Hola ');
+
 ReactDOM.render(
-    <App/>,
+    <App
+    //  saludo= "Hey"
+    //  nombre= "Developer"
+    />,
+    // <ComponentHi
+     
+    //   nombre= "Developer"
+    // />,
   document.getElementById('root')
 );
 
